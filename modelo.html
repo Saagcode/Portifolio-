@@ -3,40 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Verificador de idade</title>
-    <link rel="stylesheet" href="o.css">
+    <title>HORA DO DIA</title>
+    <style>
+            div#img {
+                border-radius: 30px;
+            }
+    </style>
+    <link rel="stylesheet" href="estilo.css">
 </head>
-<body>
+<body onload="carregar()">
     <header>
-        Verificador de Idade
+         <h1>Hora do dia</h1>
+        
     </header>
     <section>
-        <div id="dado1">
-            Ano de nascimento: <input type="number" id="oano" min="0">
+        
+            <div id="msg">
+                O horario atual: 
+            </div>               
+            <div id="img">
+                <img id="imagem" src="manha.jpg" alt="imagem">
+            </div>
+            <div id="aux">
             
-        </div>
-        <div id="dado3">
-            Sexo: <input type="radio" name="sex" id="fem">
-            <label for="fem">Feminino</label>
-            <input type="radio" name="sex" id="masc" checked> 
-            <label for="masc">Masculino</label>
-        </div>
-        <div id="verificador">
-            <input type="button" value="Verificar" onclick="clicar()">
-        </div>
-        <div id="detect">
-
-        </div>
-        <div id="img1">
-            <img id="imagem" src="" alt="">
-        </div>
-        <div id="dado2">
-            Preencha os dados acima para ver o resultado!
-        </div>
+            </div>
     </section>
     <footer>
-        &copy; User Model
+            <p>&copy; Direitos reservados</p>
     </footer>
-    <script src="ocodigo.js"></script>
+    <script src="codigo.js"></script>
 </body>
 </html>
